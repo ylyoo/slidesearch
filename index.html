@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SlideSearch</title>
+<style>
+  :root { --text: #1d2330; --muted: #5b6475; --bg: #ffffff; --accent: #2f6fed; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e6e9ef; --muted: #a0a8b8; --bg: #14171d; --accent: #7aa2ff; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Segoe UI", "Malgun Gothic", system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 32px; margin: 0 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>SlideSearch</h1>
+  <p class="muted">A personal desktop tool for searching radiology board-exam study slides.</p>
+  <p>SlideSearch runs on the user's own Windows computer. It indexes the user's own PowerPoint and PDF study decks
+     so that a keyword or a screenshot of a problem finds the relevant slides, and it can write a short study summary
+     and Anki flashcards from them.</p>
+  <h2>Google Drive</h2>
+  <p>Optionally, SlideSearch copies its search index to the user's own Google Drive so the same index can be used on
+     the user's other computers. It uses only the <code>drive.file</code> permission: it can access only the
+     "SlideSearch" folder and the files it creates there, and cannot see any other file in the user's Drive.</p>
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <p class="muted">Contact: <a href="https://github.com/ylyoo">github.com/ylyoo</a></p>
+</main>
+</body>
+</html>

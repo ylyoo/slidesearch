@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SlideSearch Privacy</title>
+<style>
+  :root { --text: #1d2330; --muted: #5b6475; --bg: #ffffff; --accent: #2f6fed; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e6e9ef; --muted: #a0a8b8; --bg: #14171d; --accent: #7aa2ff; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Segoe UI", "Malgun Gothic", system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 30px; margin: 0 0 8px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="muted">SlideSearch · last updated 12 November 2026</p>
+
+  <h2>Who uses it</h2>
+  <p>SlideSearch is a personal tool that runs on its user's own computer. There is no SlideSearch server and no
+     developer account; nothing is collected by or sent to the developer.</p>
+
+  <h2>Google user data</h2>
+  <ul>
+    <li><b>Permission used:</b> <code>https://www.googleapis.com/auth/drive.file</code> only. SlideSearch can access
+        only the "SlideSearch" folder and the files it creates there. It cannot see, read, change or delete any other
+        file in the user's Google Drive.</li>
+    <li><b>What it does with it:</b> it uploads its own search index and PDF copies of the user's study slides to that
+        folder, and downloads them on the user's other computers.</li>
+    <li><b>Where the sign-in is kept:</b> the Google sign-in token is stored only on the user's own computer, in the
+        SlideSearch folder. The user can remove access at any time in the app ("연결 해제") or at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><b>Sharing:</b> Google user data is not shared with, sold to, or transferred to anyone, and is not used for
+        advertising or to train AI models.</li>
+  </ul>
+
+  <h2>Other services</h2>
+  <p>If the user enables it with their own API key, SlideSearch sends slide images and text to Anthropic's Claude API
+     to read text in images and to write study summaries and flashcards. These requests go directly from the user's
+     computer to Anthropic under the user's own account, only when the user runs those features. On a computer that
+     downloaded the index from Google Drive, the slide text used for a requested summary comes from that downloaded
+     index; it is sent only for that user-requested feature and for no other purpose.</p>
+
+  <h2>Contact</h2>
+  <p><a href="https://github.com/ylyoo">github.com/ylyoo</a></p>
+</main>
+</body>
+</html>
